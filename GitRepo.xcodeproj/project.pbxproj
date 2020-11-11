@@ -3,18 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19D4DFFDB07A44784B6846D8 /* Pods_GitRepo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E20E502509A8E2C4977D192 /* Pods_GitRepo.framework */; };
+		7C50B4F35A954DA35D2B56E5 /* Pods_GitRepo_GitRepoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF67CFF0AF45DA1812A0264 /* Pods_GitRepo_GitRepoUITests.framework */; };
 		8471D61B255A992A00380D1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D61A255A992A00380D1F /* AppDelegate.swift */; };
 		8471D61D255A992A00380D1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D61C255A992A00380D1F /* SceneDelegate.swift */; };
-		8471D61F255A992A00380D1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D61E255A992A00380D1F /* ViewController.swift */; };
+		8471D61F255A992A00380D1F /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D61E255A992A00380D1F /* RepositoriesViewController.swift */; };
 		8471D622255A992A00380D1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8471D620255A992A00380D1F /* Main.storyboard */; };
 		8471D624255A992D00380D1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8471D623255A992D00380D1F /* Assets.xcassets */; };
 		8471D627255A992D00380D1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8471D625255A992D00380D1F /* LaunchScreen.storyboard */; };
 		8471D632255A992E00380D1F /* GitRepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D631255A992E00380D1F /* GitRepoTests.swift */; };
 		8471D63D255A992E00380D1F /* GitRepoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D63C255A992E00380D1F /* GitRepoUITests.swift */; };
+		8471D656255A9C4700380D1F /* NetworkServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D655255A9C4700380D1F /* NetworkServiceConstants.swift */; };
+		8471D65E255A9CED00380D1F /* GitHubServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D65D255A9CED00380D1F /* GitHubServiceProtocol.swift */; };
+		8471D663255A9D0600380D1F /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D662255A9D0600380D1F /* GitHubService.swift */; };
+		8471D66B255AA68600380D1F /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D66A255AA68600380D1F /* Repositories.swift */; };
+		8471D6A0255AD1AC00380D1F /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D69F255AD1AC00380D1F /* RepositoriesViewModel.swift */; };
+		8471D6A5255AD1D400380D1F /* RepositoriesViewModelsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D6A4255AD1D400380D1F /* RepositoriesViewModelsProtocol.swift */; };
+		8471D6D7255AE60900380D1F /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D6D5255AE60900380D1F /* RepoCell.swift */; };
+		8471D6D8255AE60900380D1F /* RepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8471D6D6255AE60900380D1F /* RepoCell.xib */; };
+		8471D708255AFD4B00380D1F /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D707255AFD4B00380D1F /* AppManager.swift */; };
+		8471D724255C1A7E00380D1F /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471D723255C1A7E00380D1F /* UIImageViewExtension.swift */; };
+		AB6D0AFD5ACF03075E7777C1 /* Pods_GitRepoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53112972E3B9D0901275ECB3 /* Pods_GitRepoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FF2759E03A4B2236384B029 /* Pods-GitRepoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitRepoTests.release.xcconfig"; path = "Target Support Files/Pods-GitRepoTests/Pods-GitRepoTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F6DC57037AE0CE191D25962 /* Pods-GitRepo-GitRepoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitRepo-GitRepoUITests.debug.xcconfig"; path = "Target Support Files/Pods-GitRepo-GitRepoUITests/Pods-GitRepo-GitRepoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E20E502509A8E2C4977D192 /* Pods_GitRepo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitRepo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F51903BFB111CC5D0B7A6B /* Pods-GitRepoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitRepoTests.debug.xcconfig"; path = "Target Support Files/Pods-GitRepoTests/Pods-GitRepoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53112972E3B9D0901275ECB3 /* Pods_GitRepoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitRepoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8471D617255A992A00380D1F /* GitRepo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitRepo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8471D61A255A992A00380D1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8471D61C255A992A00380D1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8471D61E255A992A00380D1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8471D61E255A992A00380D1F /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
 		8471D621255A992A00380D1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8471D623255A992D00380D1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8471D626255A992D00380D1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +67,20 @@
 		8471D638255A992E00380D1F /* GitRepoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitRepoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8471D63C255A992E00380D1F /* GitRepoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoUITests.swift; sourceTree = "<group>"; };
 		8471D63E255A992E00380D1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8471D655255A9C4700380D1F /* NetworkServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceConstants.swift; sourceTree = "<group>"; };
+		8471D65D255A9CED00380D1F /* GitHubServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubServiceProtocol.swift; sourceTree = "<group>"; };
+		8471D662255A9D0600380D1F /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
+		8471D66A255AA68600380D1F /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		8471D69F255AD1AC00380D1F /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		8471D6A4255AD1D400380D1F /* RepositoriesViewModelsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModelsProtocol.swift; sourceTree = "<group>"; };
+		8471D6D5255AE60900380D1F /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		8471D6D6255AE60900380D1F /* RepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
+		8471D707255AFD4B00380D1F /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		8471D723255C1A7E00380D1F /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		A4D1DAAFF1999E0BD7B0D937 /* Pods-GitRepo-GitRepoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitRepo-GitRepoUITests.release.xcconfig"; path = "Target Support Files/Pods-GitRepo-GitRepoUITests/Pods-GitRepo-GitRepoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB440E8758F2286304184CB2 /* Pods-GitRepo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitRepo.release.xcconfig"; path = "Target Support Files/Pods-GitRepo/Pods-GitRepo.release.xcconfig"; sourceTree = "<group>"; };
+		CEF67CFF0AF45DA1812A0264 /* Pods_GitRepo_GitRepoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitRepo_GitRepoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91DB9A0EE4B2E6ED03C2FDA /* Pods-GitRepo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitRepo.debug.xcconfig"; path = "Target Support Files/Pods-GitRepo/Pods-GitRepo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D4DFFDB07A44784B6846D8 /* Pods_GitRepo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB6D0AFD5ACF03075E7777C1 /* Pods_GitRepoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +104,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C50B4F35A954DA35D2B56E5 /* Pods_GitRepo_GitRepoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08FC1FFC6242925D810EF96F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F91DB9A0EE4B2E6ED03C2FDA /* Pods-GitRepo.debug.xcconfig */,
+				CB440E8758F2286304184CB2 /* Pods-GitRepo.release.xcconfig */,
+				1F6DC57037AE0CE191D25962 /* Pods-GitRepo-GitRepoUITests.debug.xcconfig */,
+				A4D1DAAFF1999E0BD7B0D937 /* Pods-GitRepo-GitRepoUITests.release.xcconfig */,
+				37F51903BFB111CC5D0B7A6B /* Pods-GitRepoTests.debug.xcconfig */,
+				0FF2759E03A4B2236384B029 /* Pods-GitRepoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6AF57127A1D21E759149F8E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E20E502509A8E2C4977D192 /* Pods_GitRepo.framework */,
+				CEF67CFF0AF45DA1812A0264 /* Pods_GitRepo_GitRepoUITests.framework */,
+				53112972E3B9D0901275ECB3 /* Pods_GitRepoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8471D60E255A992A00380D1F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +141,8 @@
 				8471D630255A992E00380D1F /* GitRepoTests */,
 				8471D63B255A992E00380D1F /* GitRepoUITests */,
 				8471D618255A992A00380D1F /* Products */,
+				08FC1FFC6242925D810EF96F /* Pods */,
+				6AF57127A1D21E759149F8E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +159,8 @@
 		8471D619255A992A00380D1F /* GitRepo */ = {
 			isa = PBXGroup;
 			children = (
-				8471D61A255A992A00380D1F /* AppDelegate.swift */,
-				8471D61C255A992A00380D1F /* SceneDelegate.swift */,
-				8471D61E255A992A00380D1F /* ViewController.swift */,
-				8471D620255A992A00380D1F /* Main.storyboard */,
-				8471D623255A992D00380D1F /* Assets.xcassets */,
-				8471D625255A992D00380D1F /* LaunchScreen.storyboard */,
+				8471D743255C3EC300380D1F /* Classes */,
+				8471D747255C3F3100380D1F /* Resources */,
 				8471D628255A992D00380D1F /* Info.plist */,
 			);
 			path = GitRepo;
@@ -128,6 +184,100 @@
 			path = GitRepoUITests;
 			sourceTree = "<group>";
 		};
+		8471D654255A9C1300380D1F /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				8471D655255A9C4700380D1F /* NetworkServiceConstants.swift */,
+				8471D65D255A9CED00380D1F /* GitHubServiceProtocol.swift */,
+				8471D662255A9D0600380D1F /* GitHubService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		8471D669255AA64800380D1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8471D66A255AA68600380D1F /* Repositories.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8471D69D255ACE8A00380D1F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8471D6D3255AE5B100380D1F /* RepositoriesScreen */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8471D69E255AD17B00380D1F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8471D69F255AD1AC00380D1F /* RepositoriesViewModel.swift */,
+				8471D6A4255AD1D400380D1F /* RepositoriesViewModelsProtocol.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8471D6D3255AE5B100380D1F /* RepositoriesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8471D61E255A992A00380D1F /* RepositoriesViewController.swift */,
+				8471D620255A992A00380D1F /* Main.storyboard */,
+				8471D6D4255AE5DC00380D1F /* Cell */,
+			);
+			path = RepositoriesScreen;
+			sourceTree = "<group>";
+		};
+		8471D6D4255AE5DC00380D1F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8471D6D5255AE60900380D1F /* RepoCell.swift */,
+				8471D6D6255AE60900380D1F /* RepoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8471D721255C1A4F00380D1F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8471D722255C1A6300380D1F /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8471D722255C1A6300380D1F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8471D723255C1A7E00380D1F /* UIImageViewExtension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		8471D743255C3EC300380D1F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8471D721255C1A4F00380D1F /* Extensions */,
+				8471D69E255AD17B00380D1F /* ViewModels */,
+				8471D69D255ACE8A00380D1F /* UI */,
+				8471D669255AA64800380D1F /* Model */,
+				8471D654255A9C1300380D1F /* NetworkService */,
+				8471D61A255A992A00380D1F /* AppDelegate.swift */,
+				8471D707255AFD4B00380D1F /* AppManager.swift */,
+				8471D61C255A992A00380D1F /* SceneDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8471D747255C3F3100380D1F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8471D623255A992D00380D1F /* Assets.xcassets */,
+				8471D625255A992D00380D1F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8471D641255A992E00380D1F /* Build configuration list for PBXNativeTarget "GitRepo" */;
 			buildPhases = (
+				5DD0089839985282F7BDFCE6 /* [CP] Check Pods Manifest.lock */,
 				8471D613255A992A00380D1F /* Sources */,
 				8471D614255A992A00380D1F /* Frameworks */,
 				8471D615255A992A00380D1F /* Resources */,
+				D2C0CD7C20F39CF68B72084A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8471D644255A992E00380D1F /* Build configuration list for PBXNativeTarget "GitRepoTests" */;
 			buildPhases = (
+				1AC47BDA6233AB5DBDC7302D /* [CP] Check Pods Manifest.lock */,
 				8471D629255A992E00380D1F /* Sources */,
 				8471D62A255A992E00380D1F /* Frameworks */,
 				8471D62B255A992E00380D1F /* Resources */,
@@ -170,9 +323,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8471D647255A992E00380D1F /* Build configuration list for PBXNativeTarget "GitRepoUITests" */;
 			buildPhases = (
+				32060F227D86C7D68D9DA9C3 /* [CP] Check Pods Manifest.lock */,
 				8471D634255A992E00380D1F /* Sources */,
 				8471D635255A992E00380D1F /* Frameworks */,
 				8471D636255A992E00380D1F /* Resources */,
+				E97880DA5ED9B191EABE97F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +389,7 @@
 				8471D627255A992D00380D1F /* LaunchScreen.storyboard in Resources */,
 				8471D624255A992D00380D1F /* Assets.xcassets in Resources */,
 				8471D622255A992A00380D1F /* Main.storyboard in Resources */,
+				8471D6D8255AE60900380D1F /* RepoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +409,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AC47BDA6233AB5DBDC7302D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitRepoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32060F227D86C7D68D9DA9C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitRepo-GitRepoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DD0089839985282F7BDFCE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitRepo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2C0CD7C20F39CF68B72084A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitRepo/Pods-GitRepo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitRepo/Pods-GitRepo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitRepo/Pods-GitRepo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E97880DA5ED9B191EABE97F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitRepo-GitRepoUITests/Pods-GitRepo-GitRepoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitRepo-GitRepoUITests/Pods-GitRepo-GitRepoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitRepo-GitRepoUITests/Pods-GitRepo-GitRepoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8471D613255A992A00380D1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8471D61F255A992A00380D1F /* ViewController.swift in Sources */,
+				8471D656255A9C4700380D1F /* NetworkServiceConstants.swift in Sources */,
+				8471D61F255A992A00380D1F /* RepositoriesViewController.swift in Sources */,
+				8471D724255C1A7E00380D1F /* UIImageViewExtension.swift in Sources */,
 				8471D61B255A992A00380D1F /* AppDelegate.swift in Sources */,
+				8471D708255AFD4B00380D1F /* AppManager.swift in Sources */,
 				8471D61D255A992A00380D1F /* SceneDelegate.swift in Sources */,
+				8471D6A5255AD1D400380D1F /* RepositoriesViewModelsProtocol.swift in Sources */,
+				8471D6A0255AD1AC00380D1F /* RepositoriesViewModel.swift in Sources */,
+				8471D663255A9D0600380D1F /* GitHubService.swift in Sources */,
+				8471D65E255A9CED00380D1F /* GitHubServiceProtocol.swift in Sources */,
+				8471D6D7255AE60900380D1F /* RepoCell.swift in Sources */,
+				8471D66B255AA68600380D1F /* Repositories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +701,7 @@
 		};
 		8471D642255A992E00380D1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F91DB9A0EE4B2E6ED03C2FDA /* Pods-GitRepo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +721,7 @@
 		};
 		8471D643255A992E00380D1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB440E8758F2286304184CB2 /* Pods-GitRepo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +741,7 @@
 		};
 		8471D645255A992E00380D1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37F51903BFB111CC5D0B7A6B /* Pods-GitRepoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +764,7 @@
 		};
 		8471D646255A992E00380D1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FF2759E03A4B2236384B029 /* Pods-GitRepoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +787,7 @@
 		};
 		8471D648255A992E00380D1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6DC57037AE0CE191D25962 /* Pods-GitRepo-GitRepoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +808,7 @@
 		};
 		8471D649255A992E00380D1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D1DAAFF1999E0BD7B0D937 /* Pods-GitRepo-GitRepoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
