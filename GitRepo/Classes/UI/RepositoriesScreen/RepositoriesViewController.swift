@@ -54,9 +54,5 @@ extension RepositoriesViewController {
             .bind(to: viewModel.searchTextRelay )
             .disposed(by: disposeBag)
     }
-    
-    
-    
-    
 }
 
