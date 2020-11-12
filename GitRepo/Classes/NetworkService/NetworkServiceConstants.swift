@@ -24,10 +24,10 @@ struct GitHubConstants {
 }
 
 extension GitHubConstants {
-    static func videoSearchRequest(_ videoTitle: String) -> String {
+    static func repositorySearchRequest(_ repoTitle: String) -> String {
         return baseURL
             + search
-            + videoTitle
+            + repoTitle
             + language
             + sort
             + order

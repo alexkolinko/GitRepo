@@ -32,9 +32,9 @@ extension GitHubService: GitHubServiceProtocol {
             return Single.error(error)
         }
         let methodArguments: [String: AnyObject] = ["q": txt as AnyObject]
-        let videoTitle: String = escapedParameters(methodArguments)
-        let searchVideoByTitle = GitHubConstants.videoSearchRequest(videoTitle)
-        if let url = URL(string: searchVideoByTitle) {
+        let repoTitle: String = escapedParameters(methodArguments)
+        let searchRepoByTitle = GitHubConstants.repositorySearchRequest(repoTitle)
+        if let url = URL(string: searchRepoByTitle) {
             let request = URLRequest(url: url)
             return runDataTask(request: request)
         }
